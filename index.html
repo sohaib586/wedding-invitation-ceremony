@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Royal Wedding Invitation | Usama &amp; Jaweria</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Language Switcher Capsule Button -->
+  <button class="lang-toggle-btn" id="langToggleBtn" type="button" aria-label="Switch Language">
+    <i class="fa-solid fa-globe"></i>
+    <span id="langText">Urdu</span>
+  </button>
+
+  <!-- ============================================================
+       1. FULLSCREEN OPENING ENVELOPE (CARD ANDAR CHUPA RAHEGA)
+       ============================================================ -->
+  <div class="envelope-overlay" id="envelopeOverlay">
+    <div class="envelope-card-shell" id="envelopeShell">
+      
+      <!-- 1. Background layer of envelope -->
+      <div class="envelope-bg"></div>
+
+      <!-- 2. White Card (Pehle andar 100% chupa rahega) -->
+      <div class="letter-slip" id="letterSlip">
+        <div class="letter-border">
+          <span class="arabic-bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span>
+          <p class="letter-tag">WEDDING INVITATION</p>
+          <h3 class="letter-couple">Usama &amp; Jaweria</h3>
+          <span class="letter-date">17 - 18 OCTOBER 2026</span>
+        </div>
+      </div>
+
+      <!-- 3. Front pocket (Jo card ko cover karke chupayegi) -->
+      <div class="envelope-front-pocket">
+        <div class="envelope-footer">
+          <p class="invited-txt">YOU ARE INVITED</p>
+          <div class="bottom-flourish">♡</div>
+        </div>
+      </div>
+
+      <!-- 4. Top Triangular Flap -->
+      <div class="envelope-flap" id="envelopeFlap"></div>
+
+      <!-- 5. Gold Wax Seal Button ("Tap to open") -->
+      <button class="wax-seal" id="waxSealBtn" type="button" aria-label="Tap to Open">
+        <div class="seal-content">
+          <i class="fa-solid fa-crown seal-crown"></i>
+          <span class="seal-t1">Tap</span>
+          <span class="seal-t2">to</span>
+          <span class="seal-t3">open</span>
+        </div>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Background Music Control -->
+  <div class="music-toggle" id="audioToggle">
+    <i class="fa-solid fa-music"></i>
+    <audio id="bgMusic" loop preload="auto">
+      <source src="music.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <!-- ============================================================
+       2. MAIN WEBSITE CONTENT
+       ============================================================ -->
+  <main class="site-content" id="mainWebsite">
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <!-- Background Video -->
+      <video class="hero-bg-video" autoplay muted loop playsinline>
+        <source src="bg_video.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Soft Dreamy Dark Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Center Stacked Content -->
+      <div class="hero-inner zareqia-style">
+        <div class="top-heart"><i class="fa-solid fa-heart"></i></div>
+        <p class="honor-text">We are honored to welcome you to<br>the Wedding ceremony of..</p>
+
+        <!-- Groom Block -->
+        <div class="person-block">
+          <h1 class="wedding-name">Usama Ali</h1>
+          <p class="parents-line">Son of Mr. &amp; Mrs. Zulfiqar Ali</p>
+        </div>
+
+        <!-- Center Ampersand -->
+        <div class="center-amp">&amp;</div>
+
+        <!-- Bride Block -->
+        <div class="person-block">
+          <h1 class="wedding-name">Jaweria Ashraf</h1>
+          <p class="parents-line">Daughter of Mr. &amp; Mrs. Ashraf</p>
+        </div>
+
+        <!-- Date & Scroll -->
+        <div class="wedding-badge">
+          <span>OCTOBER 17 - 18, 2026</span>
+        </div>
+
+        <a href="#events" class="scroll-link">
+          <span>SCROLL DOWN</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Couple Section -->
+    <section class="section couple-area">
+      <div class="container">
+        <div class="section-heading">
+          <h2>The Happy Couple</h2>
+          <div class="gold-sep">✦</div>
+        </div>
+
+        <div class="couple-cards">
+          <!-- Groom -->
+          <div class="profile-card">
+            <div class="photo-ring">
+              <img src="Groom.png" alt="Groom Usama Ali">
+            </div>
+            <h3>Usama Ali</h3>
+            <span class="designation">The Groom</span>
+            <p class="parentage">Son of Mr. &amp; Mrs. Zulfiqar Ali</p>
+          </div>
+
+          <!-- Center Ampersand Block -->
+          <div class="crest-and">&amp;</div>
+
+          <!-- Bride -->
+          <div class="profile-card">
+            <div class="photo-ring">
+              <img src="Bride.jpg" alt="Bride Jaweria Ashraf">
+            </div>
+            <h3>Jaweria Ashraf</h3>
+            <span class="designation">The Bride</span>
+            <p class="parentage">Daughter of Mr. &amp; Mrs. Ashraf</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scratch Card Section -->
+    <section class="section scratch-area">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Scratch To Reveal</h2>
+          <div class="gold-sep">✦</div>
+          <p class="sub-desc">Scratch the gold card below with your finger or mouse to unveil the wedding message</p>
+        </div>
+
+        <div class="scratch-container">
+          <!-- Hidden message -->
+          <div class="hidden-layer">
+            <div class="hidden-inner">
+              <i class="fa-solid fa-heart hidden-heart"></i>
+              <h3 class="hidden-h3">You Are Invited!</h3>
+              <p class="hidden-p">To the Wedding Celebrations of</p>
+              <h2 class="hidden-names">Usama &amp; Jaweria</h2>
+              <div class="hidden-date-pill">18th October 2026</div>
+              <p class="hidden-blessing">"May Allah bless this union with love, peace &amp; joy"</p>
+            </div>
+          </div>
+
+          <!-- Canvas -->
+          <canvas id="scratchCanvas" width="320" height="320"></canvas>
+        </div>
+
+        <div class="scratch-bar-wrap">
+          <p id="scratchNotice"><i class="fa-solid fa-wand-magic-sparkles"></i> Scratch gently to reveal our date!</p>
+          <div class="progress-track">
+            <div class="progress-bar" id="scratchFill"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="section countdown-area">
+      <div class="container">
+        <h3 class="timer-title">Counting Down To The Big Day</h3>
+        <div class="timer-grid" id="countdown">
+          <div class="timer-unit">
+            <span class="num" id="days">00</span>
+            <span class="unit-txt">Days</span>
+          </div>
+          <div class="timer-unit">
+            <span class="num" id="hours">00</span>
+            <span class="unit-txt">Hours</span>
+          </div>
+          <div class="timer-unit">
+            <span class="num" id="minutes">00</span>
+            <span class="unit-txt">Minutes</span>
+          </div>
+          <div class="timer-unit">
+            <span class="num" id="seconds">00</span>
+            <span class="unit-txt">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="section events-area" id="events">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Wedding Itinerary</h2>
+          <div class="gold-sep">✦</div>
+          <p class="sub-desc">Please join us for every special celebration</p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Event 1: Arrival (Single guest par hide hoga) -->
+          <div class="event-box" id="eventArrival">
+            <div class="event-ico"><i class="fa-solid fa-users"></i></div>
+            <span class="event-day">Saturday, 17th October 2026</span>
+            <h3>Guests Arrival</h3>
+            <p class="event-hr"><i class="fa-regular fa-clock"></i> 12:00 PM</p>
+            <p class="event-text">Warm reception and welcoming of all guests and family members.</p>
+          </div>
+
+          <!-- Event 2: Barat (Single guest par hide hoga) -->
+          <div class="event-box highlight-box" id="eventBarat">
+            <div class="event-ico"><i class="fa-solid fa-heart"></i></div>
+            <span class="event-day">Saturday, 17th October 2026</span>
+            <h3>Wedding Ceremony (Barat)</h3>
+            <p class="event-hr"><i class="fa-regular fa-clock"></i> 12:30 PM</p>
+            <p class="event-text">The sacred Nikah ritual followed by wedding luncheon.</p>
+          </div>
+
+          <!-- Event 3: Walima (Dono guests ko dikhega) -->
+          <div class="event-box" id="eventWalima">
+            <div class="event-ico"><i class="fa-solid fa-champagne-glasses"></i></div>
+            <span class="event-day">Sunday, 18th October 2026</span>
+            <h3>Reception (Walima)</h3>
+            <p class="event-hr"><i class="fa-regular fa-clock"></i> 05:30 PM</p>
+            <p class="event-text">Royal dinner banquet to celebrate the newlywed couple.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section class="section venue-area">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Wedding Venue</h2>
+          <div class="gold-sep">✦</div>
+        </div>
+
+        <div class="venue-card">
+          <div class="venue-details">
+            <i class="fa-solid fa-location-dot venue-icon"></i>
+            <h3>Sittara Marriage Hall</h3>
+            <p class="venue-loc">Bhakkar, Punjab, Pakistan</p>
+            <p class="venue-guide">Indoor air-conditioned banquet facilities and parking arrangements made for your comfort.</p>
+            
+            <a href="https://maps.google.com/?q=Sittara+Marriage+Hall+Bhakkar+Punjab+Pakistan" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+              <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+            </a>
+          </div>
+          
+          <div class="venue-embed">
+            <iframe 
+              src="https://www.google.com/maps?q=Sittara+Marriage+Hall+Bhakkar+Punjab+Pakistan&output=embed" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="section rsvp-area" id="rsvp">
+      <div class="container">
+        <div class="section-heading">
+          <h2>RSVP</h2>
+          <div class="gold-sep">✦</div>
+          <p class="sub-desc">Kindly confirm your presence so we may warmly receive you</p>
+        </div>
+
+        <div class="rsvp-card">
+          <form id="rsvpForm" onsubmit="return false;">
+            <div class="field-item">
+              <label for="guestName">Your Full Name *</label>
+              <input type="text" id="guestName" placeholder="e.g. Sohaib Anwaar" required>
+            </div>
+
+            <div class="field-grid">
+              <div class="field-item">
+                <label for="attendingStatus">Will you attend? *</label>
+                <select id="attendingStatus" required>
+                  <option value="" disabled selected>Choose Attendance</option>
+                  <option value="Joyfully Attending">Yes, I will attend with joy!</option>
+                  <option value="Regretfully Decline">Sorry, I cannot attend</option>
+                </select>
+              </div>
+
+              <!-- Guest Count Container (Smart Hide/Show Target) -->
+              <div class="field-item" id="guestCountWrapper">
+                <label for="guestCount">Total Persons *</label>
+                <select id="guestCount" required>
+                  <option value="1 Person">1 Person</option>
+                  <option value="2 Persons">2 Persons</option>
+                  <option value="3 Persons">3 Persons</option>
+                  <option value="4+ Persons">4 or more</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-item">
+              <label for="guestMessage">Warm Wishes &amp; Duas</label>
+              <textarea id="guestMessage" rows="3" placeholder="Write prayers or congratulations..."></textarea>
+            </div>
+
+            <div class="action-buttons">
+              <!-- Send via WhatsApp -->
+              <button type="button" class="btn btn-wa" id="sendWhatsApp">
+                <i class="fa-brands fa-whatsapp"></i> RSVP via WhatsApp
+              </button>
+              
+              <!-- Send via Gmail -->
+              <button type="button" class="btn btn-gm" id="sendEmail">
+                <i class="fa-solid fa-envelope"></i> RSVP via Gmail
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-crest">U &amp; J</div>
+        <p class="foot-names">Usama &amp; Jaweria</p>
+        <p class="foot-date">17th – 18th October 2026 • Sittara Marriage Hall, Bhakkar</p>
+        <p class="foot-msg">We look forward to celebrating this memorable day with you!</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
