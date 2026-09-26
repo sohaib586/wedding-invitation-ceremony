@@ -766,6 +766,17 @@ body.lang-ur .event-day {
   box-shadow: var(--shadow-soft);
 }
 
+/* Jab desktop/laptop par 3 cards ki row bane, toh 4th card (Walima) center mein aaye */
+@media (min-width: 900px) {
+  .timeline-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #eventWalima {
+    grid-column: 2; /* Yeh isko seedha 2nd column yaani center mein set karega */
+  }
+}
+
 .highlight-box {
   border: 2px solid var(--gold-primary);
   background: linear-gradient(to bottom, #ffffff, #faf6ee);

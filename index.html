@@ -39,7 +39,7 @@
           <span class="arabic-bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span>
           <p class="letter-tag">WEDDING INVITATION</p>
           <h3 class="letter-couple">Usama &amp; Jaweria</h3>
-          <span class="letter-date">17 - 18 OCTOBER 2026</span>
+          <span class="letter-date" id="envelopeDate">16 - 18 OCTOBER 2026</span>
         </div>
       </div>
 
@@ -112,7 +112,7 @@
 
         <!-- Date & Scroll -->
         <div class="wedding-badge">
-          <span>OCTOBER 17 - 18, 2026</span>
+          <span id="heroDateBadge">OCTOBER 16 - 18, 2026</span>
         </div>
 
         <a href="#events" class="scroll-link">
@@ -174,7 +174,7 @@
               <h3 class="hidden-h3">You Are Invited!</h3>
               <p class="hidden-p">To the Wedding Celebrations of</p>
               <h2 class="hidden-names">Usama &amp; Jaweria</h2>
-              <div class="hidden-date-pill">18th October 2026</div>
+              <div class="hidden-date-pill" id="scratchDatePill">16th - 18th October 2026</div>
               <p class="hidden-blessing">"May Allah bless this union with love, peace &amp; joy"</p>
             </div>
           </div>
@@ -227,25 +227,34 @@
         </div>
 
         <div class="timeline-grid">
-          <!-- Event 1: Arrival (Single guest par hide hoga) -->
-          <div class="event-box" id="eventArrival">
-            <div class="event-ico"><i class="fa-solid fa-users"></i></div>
-            <span class="event-day">Saturday, 17th October 2026</span>
-            <h3>Guests Arrival</h3>
-            <p class="event-hr"><i class="fa-regular fa-clock"></i> 12:00 PM</p>
-            <p class="event-text">Warm reception and welcoming of all guests and family members.</p>
+          <!-- Event 0: Mehndi (Single guest par hide hoga) -->
+          <div class="event-box" id="eventMehndi">
+            <div class="event-ico"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <span class="event-day">Friday, 16th October 2026</span>
+            <h3>Mehndi Celebration</h3>
+            <p class="event-hr"><i class="fa-regular fa-clock"></i> 07:00 PM</p>
+            <p class="event-text">An evening of traditional henna rituals, vibrant colors, and joyous family celebrations.</p>
           </div>
 
-          <!-- Event 2: Barat (Single guest par hide hoga) -->
+          <!-- Event 1: Departure of Barat (Single guest par hide hoga) -->
+          <div class="event-box" id="eventDeparture">
+            <div class="event-ico"><i class="fa-solid fa-car-side"></i></div>
+            <span class="event-day">Saturday, 17th October 2026</span>
+            <h3>Departure of Barat</h3>
+            <p class="event-hr"><i class="fa-regular fa-clock"></i> 11:00 AM</p>
+            <p class="event-text">Gathering of family and guests for the grand departure of Barat procession.</p>
+          </div>
+
+          <!-- Event 2: Wedding Ceremony Barat (Single guest par hide hoga) -->
           <div class="event-box highlight-box" id="eventBarat">
             <div class="event-ico"><i class="fa-solid fa-heart"></i></div>
             <span class="event-day">Saturday, 17th October 2026</span>
-            <h3>Wedding Ceremony (Barat)</h3>
+            <h3>Wedding Ceremony (Nikah)</h3>
             <p class="event-hr"><i class="fa-regular fa-clock"></i> 12:30 PM</p>
             <p class="event-text">The sacred Nikah ritual followed by wedding luncheon.</p>
           </div>
 
-          <!-- Event 3: Walima (Dono guests ko dikhega) -->
+          <!-- Event 3: Walima Reception (Dono guests ko dikhega) -->
           <div class="event-box" id="eventWalima">
             <div class="event-ico"><i class="fa-solid fa-champagne-glasses"></i></div>
             <span class="event-day">Sunday, 18th October 2026</span>
@@ -352,7 +361,7 @@
       <div class="container">
         <div class="foot-crest">U &amp; J</div>
         <p class="foot-names">Usama &amp; Jaweria</p>
-        <p class="foot-date">17th – 18th October 2026 • Sittara Marriage Hall, Bhakkar</p>
+        <p class="foot-date" id="footerDate">16th – 18th October 2026 • Sittara Marriage Hall, Bhakkar</p>
         <p class="foot-msg">We look forward to celebrating this memorable day with you!</p>
       </div>
     </footer>
